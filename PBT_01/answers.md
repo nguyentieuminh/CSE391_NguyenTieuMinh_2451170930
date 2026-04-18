@@ -219,3 +219,28 @@ Inline Element chỉ chiếm nội dung.
 - Không đúng semantic HTML.
 
 > Nguồn tham chiếu: `05_tables_hyperlinks.md` - `"Bảng Giá Sản Phẩm Đầu Tiên" — Minh làm trang e-commerce`
+
+<br>
+
+---
+
+## PHẦN B — THỰC HÀNH CODE
+
+### Bài B3 — Debug HTML
+
+- **Lỗi 1**: Dòng 1 — Sai `DOCTYPE` — Sửa thành `<!DOCTYPE html>`
+- **Lỗi 2**: Dòng 2 - Thiếu `lang` cho `<html>` - Sửa thành `<html lang="vi">`
+- **Lỗi 3**: DÒng 4 - Không đóng thẻ `<title>` - Thêm thẻ đóng `</title>`
+- **Lỗi 4**: Dòng 5 - Sai charset - Sửa `utf8` thành `utf-8`
+- **Lỗi 5**: Dòng 8 - Sai thẻ đóng `<h1>` - Sửa thẻ đóng thành `</h1>`
+- **Lỗi 6**: Dòng 12 - Sai thẻ đóng `<a>` - Đổi thẻ đóng `<a>` thành `</a>`
+- **Lỗi 7**: Dòng 12 - Link không rõ ràng - Đổi thành `href="#home"` hoặc `home.html`
+- **Lỗi 8**: Dòng 13 - Link không rõ ràng - Đổi thành `href="#products"` hoặc `products.html`
+- **Lỗi 9**: Dòng 20 - Thiếu dấu ngoặc kép cho value của `src` - Sửa thành `src="iphone.jpg"`
+- **Lỗi 10**: Dòng 20 - Thiếu thuộc tính `alt` cho ảnh - Thêm `alt="iPhone 16 Pro"`
+- **Lỗi 11**: Dòng 22 - Sai thứ tự đóng thẻ `<b>` và `<p>` - Sửa thành `<p>Giá: <b>25.990.000đ</b></p>`
+- **Lỗi 12**: Dòng 40 - Dùng 2 thẻ `<main>` - Đổi `<main>` thành `<aside>`
+- **Lỗi 13**: Dòng 45 - Không đóng thẻ `<p>` - Thêm thẻ đóng `</p>`
+- **Lỗi 14**: Dòng 48 - Không đóng thẻ `<html>` - Thêm thẻ đóng `</html>`
+
+[Code đã chỉnh sửa](/PBT_01/B3-debug/debug.html)

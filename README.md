@@ -6,4 +6,4 @@
 - Họ và tên: Nguyễn Tiêu Minh
 - Lớp: 66KTPM1
 
-## Tiến độ hoàn thành bài tập: PBT_01: Hoàn thành bài B2 - Trang Sản phẩm E-Commerce
+## Tiến độ hoàn thành bài tập: PBT_01: Hoàn thành bài Bài B3 — Debug HTML
