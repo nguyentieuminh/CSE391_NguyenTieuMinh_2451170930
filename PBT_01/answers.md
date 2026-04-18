@@ -105,7 +105,7 @@
 - Tổng số request của website.
 > Nguồn tham chiếu: `01_introduction_html_universe.md` - `4.3. Developer Tools (F12) — "Kính hiển vi" cho website`
 
-&nbsp;&nbsp;&nbsp;&nbsp; [Screenshot tab Network](/screenshots/A1-2-Screenshot_tab_Network.png):
+&nbsp;&nbsp;&nbsp;&nbsp; [Screenshot tab Network](/PBT_01/screenshots/A1-2-Screenshot_tab_Network.png):
 - 1 - Status Code của request đầu tiên.
 - 2 - Tổng thời gian load trang.
 - 3 - Một request trả về file CSS.
