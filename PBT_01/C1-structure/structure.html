@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>   <!-- tiêu đề tab trình duyệt -->
+</head>
+
+<body>
+
+    <header class="container-fluid">   <!-- thẻ <header> dùng cho phần đầu trang. Do background header 100% width body nên là một container-fluid -->
+        <nav>   <!-- <nav> vì đây là menu điều hướng -->
+            <div class="container">   <!-- cho một container bao lấy các phần tử con bên trong (không gộp vào nav để dễ CSS) -->
+                <a href="/" class="logo"><img src="" alt=""></a>   <!-- thẻ <a> bao thẻ ảnh <img> vì logo thường dẫn về trang chủ -->
+
+                <ul>   <!-- <ul> vì menu là danh sách không thứ tự -->
+                    <li><a href="/">Trang chủ</a></li> <!-- <li> là phần tử trong danh sách -->
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">   <!-- <main> vì chứa nội dung chính của trang -->
+        <nav aria-label="breadcrumb">   <!-- <nav vì breadcrumb là điều hướng -->
+            <ol>   <!-- <ol> vì breadcrumb có thứ tự -->
+                <li><a href="/">Trang chủ</a></li>   <!-- <li> là từng cấp -->
+                <li><a href="#">Điện thoại</a></li>
+                <li>iPhone 16</li>
+            </ol>
+        </nav>
+
+        <section class="row">   <!-- <section> dùng để nhóm nội dung chính của trang. Là 1 row của hệ thống flexbox 12 cột -->
+            <section class="col-9">   <!-- <section> nhóm phần mô tả sản phẩm, chiếm 9 cột -->
+                <section class="product-detail row">   <!-- <section> nhóm mô tả ngắn sản phẩm. Là 1 row của hệ thống flexbox 12 cột -->
+
+                    <figure class="col-5">   <!-- <figure> vì chứa hình ảnh sản phẩm, chiếm 5 cột -->
+                        <div class="main-image">   <!-- khối <div> bọc ảnh để dễ quản lý CSS -->
+                            <img src="" alt="">   <!-- ảnh lớn (ảnh được chọn dưới danh sách ảnh) -->
+                        </div>
+
+                        <div>   <!-- <div> nhóm danh sách ảnh nhỏ bên dưới ảnh lớn -->
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </figure>
+
+                    <figcaption class="col-7">   <!-- <figcaption> vì mô tả cho figure bên cạnh, chiếm 7 cột -->
+                        <h2>Tên sản phẩm</h2>   <!-- <h1> vì đây là tiêu đề chính của trang -->
+                        <p style="color: red;">Giá sản phẩm</p>   <!-- <p> vì là đoạn văn bản giá -->
+
+                        <div class="rating">   <!-- <div> nhóm khu vực đánh giá -->
+                            <span>(sao đánh giá)</span>   <!-- <span> vì là một phần tử riêng nhưng cùng dòng với phần tử khác -->
+                            <span>(Số lượt đánh giá)</span>   <!-- <span> vì cùng dòng với phần sao đánh giá -->
+                        </div>
+
+                        <p class="description">Mô tả ngắn sản phẩm</p>   <!-- <p> vì nội dung mô tả -->
+                    </figcaption>
+
+                </section>
+
+                <section class="specs">   <!-- <section> nhóm riêng phần thông số kỹ thuật -->
+                    <h2>Thông số kỹ thuật</h2>   <!-- <h2> vì tiêu đề -->
+
+                    <table>   <!-- <table> vì dữ liệu dạng hàng cột -->
+                        <thead>   <!-- <thead> chứa tiêu đề cột -->
+                            <tr>   <!-- <tr> là 1 hàng -->
+                                <th>Tên thông số</th>   <!-- <th> là ô tiêu đề -->
+                                <th>Giá trị</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>   <!-- <tbody> chứa dữ liệu chính -->
+                            <tr>
+                                <td>Màn hình</td>   <!-- <td> là ô dữ liệu -->
+                                <td>6.1 inch</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chip</td>
+                                <td>A18</td>
+                            </tr>
+
+                            <tr>
+                                <td>RAM</td>
+                                <td>8GB</td>
+                            </tr>
+                        </tbody>
+
+                        <!-- không cần <tfoot> do không chứa tổng kết hay ghi chú -->
+                    </table>
+
+                </section>
+
+                <section class="reviews">   <!-- <section> nhóm khu vực đánh giá -->
+                    <h2>Đánh giá sản phẩm</h2>   <!-- tiêu đề -->
+
+                    <article class="review-item">   <!-- <article> vì mỗi bình luận là nội dung độc lập -->
+                        <h3>Tên người dùng</h3>
+                        <p>Nội dung bình luận</p>
+                    </article>
+                </section>
+
+            </section>
+
+            <aside class="col-3">   <!-- aside vì đây là nội dung phụ liên quan, chiếm 3 cột -->
+                <h3>Sản phẩm tương tự</h3>   <!-- tiêu đề -->
+
+                <ul>   <!-- ul vì danh sách sản phẩm -->
+                    <li><a href="#">
+                        <article></article>   <!-- <article> vì mỗi phần tử trong danh sách là một card sản phẩm -->
+                    </a></li>
+                    <li><a href="#">
+                        <article></article>
+                    </a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="container-fluid">   <!-- <footer> vì đây là phần cuối trang. Do background footer 100% width body nên là một container-fluid  -->
+        <div class="container">   <!-- <div> container dùng gom nội dung footer -->
+            <p>Thông tin bản quyền / liên hệ</p>   <!-- <p> vì chỉ là đoạn text -->
+        </div>
+    </footer>
+</body>
+
+</html>

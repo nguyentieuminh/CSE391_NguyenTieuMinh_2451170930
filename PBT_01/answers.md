@@ -280,3 +280,16 @@ Inline Element chỉ chiếm nội dung.
 hoặc có thể trang web thay bằng sự kiện onclick của button `Tiếp tục` và xử lý bằng hàm JavaScript (VD hàm `handleSubmit()`).
 
 - 2 input types được sử dụng là `tel` và `checkbox`.
+
+---
+
+## PHẦN C — SUY LUẬN
+
+### Câu C1 - Thiết kế cấu trúc
+
+[Cấu trúc HTML cho trang chi tiết sản phẩm.](/PBT_01/C1-structure/structure.html)
+
+<br>
+
+### Câu C2 - So sánh & Tranh luận
+
