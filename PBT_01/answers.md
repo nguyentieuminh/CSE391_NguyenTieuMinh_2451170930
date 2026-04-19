@@ -287,7 +287,7 @@ hoặc có thể trang web thay bằng sự kiện onclick của button `T
 
 ### Câu C1 - Thiết kế cấu trúc
 
-[Cấu trúc HTML cho trang chi tiết sản phẩm.](/PBT_01/C1-structure/structure.html)
+[Cấu trúc HTML cho trang chi tiết sản phẩm.](/PBT_01/code/C1-structure/structure.html)
 
 <br>
 
