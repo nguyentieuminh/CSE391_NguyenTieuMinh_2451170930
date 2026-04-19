@@ -243,7 +243,7 @@ Inline Element chỉ chiếm nội dung.
 - **Lỗi 13**: Dòng 45 - Không đóng thẻ `<p>` - Thêm thẻ đóng `</p>`
 - **Lỗi 14**: Dòng 48 - Không đóng thẻ `<html>` - Thêm thẻ đóng `</html>`
 
-[Code đã chỉnh sửa](/PBT_01/B3-debug/debug.html)
+[Code đã chỉnh sửa](/PBT_01/code/B3-debug/debug.html)
 
 <br>
 
