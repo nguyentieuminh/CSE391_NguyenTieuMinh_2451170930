@@ -6,4 +6,4 @@
 - Họ và tên: Nguyễn Tiêu Minh
 - Lớp: 66KTPM1
 
-## Tiến độ hoàn thành bài tập: PBT_01: Hoàn thành câu C1 - Thiết kế cấu trúc
+## Tiến độ hoàn thành bài tập: PBT_01: Hoàn thành câu C2 - So sánh & Tranh luận
