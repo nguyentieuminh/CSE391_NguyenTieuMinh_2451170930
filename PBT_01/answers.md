@@ -244,3 +244,39 @@ Inline Element chỉ chiếm nội dung.
 - **Lỗi 14**: Dòng 48 - Không đóng thẻ `<html>` - Thêm thẻ đóng `</html>`
 
 [Code đã chỉnh sửa](/PBT_01/B3-debug/debug.html)
+
+<br>
+
+### Câu B4 — Phân tích trang web thật
+
+#### 1. Semantic tag:
+
+- 3 thẻ semantic HTML5 mà trang `tiki.vn` sử dụng:
+
+&nbsp;&nbsp;&nbsp;&nbsp; [Thẻ `<header>` bọc các phần logo, searchbox, button trang chủ, button tài khoản, giỏ hàng, địa chỉ giao hàng](/PBT_01/screenshots/B4-Element_screenshot_1.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp; [Thẻ `<main>` bao toàn bộ các phần tử từ banner đến hết trang.](/PBT_01/screenshots/B4-Element_screenshot_2.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp; [Thẻ `<footer>` bao toàn bộ các phần tử từ khối thông tin hỗ trợ khách hàng, về Tiki, hợp tác và liên kết,... đến hết trang.](/PBT_01/screenshots/B4-Element_screenshot_3.png)
+
+- 2 thẻ mà trang không dùng đúng semantic:
+
+&nbsp;&nbsp;&nbsp;&nbsp; [Thẻ `<div>` bao các phần nội dung chính thay vì `<section>`.](/PBT_01/screenshots/B4-Element_screenshot_4.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp; [Thẻ `<div>` bao các card sản phẩm thay vì `<article>`.](/PBT_01/screenshots/B4-Element_screenshot_5.png)
+
+#### 2. `<table>`:
+
+- Không tìm thấy table do trang web sử dụng hệ thống flexbox với các thẻ `<div>` hoặc `<ul>`, `<li>` để dễ làm chủ bố cục và CSS.
+
+#### 3. `<form>`:
+
+- [`<form>` không có `action` và `method`](/PBT_01/screenshots/B4-Element_screenshot_6.png). Vậy nên:
+
+&nbsp;&nbsp;&nbsp;&nbsp; `action` mặc định chứa URL hiện tại của trang web.
+
+&nbsp;&nbsp;&nbsp;&nbsp; `method` mặc định là `GET`.
+
+hoặc có thể trang web thay bằng sự kiện onclick của button `Tiếp tục` và xử lý bằng hàm JavaScript (VD hàm `handleSubmit()`).
+
+- 2 input types được sử dụng là `tel` và `checkbox`.
