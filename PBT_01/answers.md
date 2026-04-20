@@ -304,3 +304,9 @@ Ví dụ, thay vì viết `<div class="menu">...</div>`, ta dùng `<nav>...</nav
 Tuy nhiên, `<div>` vẫn rất phù hợp trong nhiều trường hợp. Chẳng hạn dùng làm wrapper để chia layout, nhóm các phần tử phục vụ CSS Grid/Flexbox, hoặc tạo card giao diện không mang ý nghĩa nội dung riêng.
 
 Tóm lại, semantic HTML là cách viết web đúng chuẩn, dễ bảo trì, thân thiện SEO và hỗ trợ mọi người dùng tốt hơn. `<div>` nên dùng đúng chỗ, không nên thay thế toàn bộ HTML semantics.
+
+---
+
+## PHẦN D — VIDEO THỰC HÀNH OBS
+
+[Link video](https://drive.google.com/file/d/13b7i6rn74JFRS12SuF7V436AoREh3Pmm/view?usp=drive_link)
