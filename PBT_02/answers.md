@@ -91,3 +91,44 @@ Khi user bấm Submit, trình duyệt sẽ chạy HTML5 form validation built-in
 
 ### Câu A3 — Accessibility
 
+1. `<label for="email">` quan trọng cho người dùng screen reader vì giúp liên kết tên mô tả với ô nhập liệu. Từ đó người dùng dùng biết đây là ô nhập gì.
+
+<br>
+
+2. Dùng `<fieldset>` + `<legend>` khi có nhiều input thuộc cùng một nhóm thông tin.
+
+&nbsp;&nbsp;&nbsp;&nbsp;  VD cụ thể thông tin giao hàng:
+
+```html
+<fieldset>
+    <legend>Thông tin giao hàng</legend>
+
+    <label for="name">Họ tên</label>
+    <input id="name">
+
+    <label for="phone">Số điện thoại</label>
+    <input id="phone">
+
+    <label for="address">Địa chỉ</label>
+    <input id="address">
+</fieldset>
+```
+
+<br>
+
+3. `aria-label` dùng khi không có text hiển thị trên màn hình, nhưng vẫn cần tên cho screen reader.
+
+&nbsp;&nbsp;&nbsp;&nbsp; VD icon button chỉ chứa icon, nhưng screen reader cần text để đọc. screen reader sẽ không biết nút đó để làm gì trừ khi có `aria-label`.
+
+```html
+<button aria-label="Tìm kiếm">giả sử icon kính lúp ở đây</button>
+```
+
+&nbsp;&nbsp;&nbsp; Không nên dùng `aria-label` khi đã có `<label>` vì:
+
+- Gây trùng thông tin, ghi đè label thật làm screen reader đọc không như mong muốn.
+
+- Code thừa.
+
+<br>
+
