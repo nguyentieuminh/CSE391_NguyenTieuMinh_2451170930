@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Test</title>
+
+    <style>
+        label {display: block; margin-bottom: 5px;}
+        input {margin-bottom: 15px;}
+    </style>
+</head>
+
+<body>
+
+    <h2>HTML5 Validation Test</h2>
+
+    <form action="#" method="post">
+
+        <div>
+            <label for="name"><strong>Tên <span style="color: red;">*</span></strong></label>
+            <input id="name" type="text" required value="">
+        </div>
+
+        <div>
+            <label for="email"><strong>Email</strong></label>
+            <input id="email" type="email" value="abc">
+        </div>
+
+        <div>
+            <label for="age"><strong>Tuổi (từ 1 đến 10)</strong></label>
+            <input id="age" type="number" min="1" max="10" value="15">
+        </div>
+
+        <div>
+            <label for="phone_number"><strong>Phone numbe</strong>r</label>
+            <input id="phone_number" type="text" pattern="[0-9]{10}" value="abc123">
+        </div>
+
+        <div>
+            <label for="password"><strong>Password</strong></label>
+            <input id="password" type="password" minlength="8" value="123">
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+
+</html>

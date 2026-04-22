@@ -6,4 +6,4 @@
 - Họ và tên: Nguyễn Tiêu Minh
 - Lớp: 66KTPM1
 
-## Tiến độ hoàn thành bài tập: PBT_01: Hoàn thành PHẦN D — VIDEO THỰC HÀNH OBS
+## Tiến độ hoàn thành bài tập: PBT_02: Hoàn thành Câu A2 — Validation Attributes
