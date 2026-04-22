@@ -132,3 +132,95 @@ Khi user bấm Submit, trình duyệt sẽ chạy HTML5 form validation built-in
 
 <br>
 
+### Câu A4 - Media
+
+1. Thuộc tính `loading="lazy"` trên thẻ `<img>` trì hoãn tải ảnh cho đến khi ảnh gần xuất hiện trong viewport của người dùng.
+
+&rightarrow; Cải thiện tốc độ tải trang.
+
+&nbsp;&nbsp;&nbsp; Không nên dùng `loading="lazy"` khi đó là ảnh đầu trang, logo quan trọng xuất hiện ngay khi mở trang.
+
+<br>
+
+2. Nên cung cấp nhiều `<source>` trong thẻ `<video>` vì mỗi trình duyệt hỗ trợ codec/format khác nhau. Nếu browser không phát được format đầu tiên, nó sẽ thử format tiếp theo. Từ đó giúp tương thích nhiều trình duyệt và tối ưu chất lượng và dung lượng.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Ba format video web phổ biến:
+
+- `MP4`: Phổ biến nhất, đăng tải đa nền tảng.
+
+- `WebM`: Khả năng nén tốt. Dùng khi cần tối ưu hóa tốc độ tải trang.
+
+- `MOV`: Không nén hoặc nén tốt. Dùng khi ưu tiên chất lượng hình ảnh cao nhất.
+
+<br>
+
+3. Thuộc tính `alt` trên `<img>` dùng để:
+
+- Hiển thị text thay thế tại vị trí ảnh khi trang không load được ảnh.
+
+- Screen reader đọc nội dung để người dùng hiểu hình ảnh đó đang hiển thị gì.
+
+&nbsp;&nbsp;&nbsp;&nbsp; `alt` tốt cho 3 trường hợp:
+
+- Ảnh sản phẩm iPhone 16
+
+```html
+<img src="" alt="Mặt sau iPhone 16 màu đen">
+```
+
+- Ảnh trang trí (decorative)
+
+```html
+<!-- Nếu chỉ để đẹp, không mang nội dung thì không dùng alt để screen reader bỏ qua -->
+<img src="" alt="">
+```
+
+- Ảnh biểu đồ doanh thu Q1/2026
+
+```html
+<img src="" alt="Biểu đồ cột hiển thị doanh thu quý 1 năm 2026, ghi nhận mức tăng trưởng 15% so với cùng kỳ năm trước">
+```
+
+<br>
+
+### Câu A5 - So sánh `<figure>` vs `<img>`
+
+Dùng Cách 1 (`img`) khi ảnh chỉ là nội dung hình ảnh đơn lẻ, không cần chú thích hiển thị kèm theo.
+
+- VD1: Avatar user trong comment
+
+```html
+<img src="avatar.jpg" alt="Ảnh đại diện của Minh">
+<span>Minh (22/04/2026)</span>
+<p>Sản phẩm tốt!</p>
+```
+
+- VD2: Logo
+
+```html
+<img src="logo.svg" alt="">
+```
+
+<br>
+
+Dùng Cách 2 (`figure` + `figcaption`) khi ảnh là một khối nội dung độc lập và cần mô tả liên quan trực tiếp.
+
+- VD1: Ảnh sản phẩm trong phần chi tiết sản phẩm
+
+```html
+<figure>
+    <img src="iPhone16.jpg" alt="iPhone 16 Pro Max màu Titan">
+    <figcaption>iPhone 16 Pro Max 256GB màu Titan — <span style="color: red;">25.990.000đ</span></figcaption>
+</figure>
+```
+
+- VD2: Ảnh trình bày biểu đồ trong báo cáo
+
+```html
+<figure>
+    <img src="q1_2026.jpg" alt="Biểu đồ cột hiển thị doanh thu quý 1 năm 2026, ghi nhận mức tăng trưởng 15% so với cùng kỳ năm trước">
+    <figcaption>Biểu đồ doanh thu Q1/2026</figcaption>
+</figure>
+```
+
+<br>
