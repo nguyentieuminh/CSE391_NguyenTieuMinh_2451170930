@@ -224,3 +224,11 @@ Dùng Cách 2 (`figure` + `figcaption`) khi ảnh là một khối nội dung đ
 ```
 
 <br>
+
+---
+
+## PHẦN B — THỰC HÀNH CODE
+
+### Bài B1 — Form Đăng ký Tài khoản
+
+HTML không thể validate confirm password vì validation mặc định của HTML chỉ kiểm tra từng input riêng lẻ, không so sánh giá trị giữa hai ô khác nhau. Vậy nên HTML không thể tự kiểm tra ô confirm password có trùng với password hay không.

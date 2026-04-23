@@ -1,0 +1,51 @@
+ body {
+     background: #f8f8f8;
+     min-height: 100vh;
+ }
+
+ .register-box {
+     max-width: 850px;
+     margin: 40px auto;
+     background: white;
+     border-radius: 16px;
+     padding: 35px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+ }
+
+ legend {
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #6366F1;
+     padding: 0 10px;
+ }
+
+ fieldset {
+     border: 2px solid #dee2e6;
+     border-radius: 12px;
+     padding: 20px;
+     margin-bottom: 25px;
+ }
+
+ textarea {
+     resize: none;
+ }
+
+ .btn-group-custom {
+     gap: 10px;
+ }
+
+ .btn-submit {
+     background-color: #6366F1;
+     color: white;
+ }
+
+ .btn-submit:hover {
+     background-color: #4b4ddd;
+     color: white;
+ }
+
+ .btn-outline-secondary:hover {
+    background-color: #a2a0a0;
+    border-color: #4b4ddd;
+    color: white;
+ }
